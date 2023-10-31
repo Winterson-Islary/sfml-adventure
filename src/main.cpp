@@ -3,6 +3,8 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SHAPES");
+    sf::CircleShape shape(50.f);
+    shape.setFillColor(sf::Color(190, 60, 130));
     while (window.isOpen())
     {
         sf::Vector2u size = window.getSize();
@@ -13,8 +15,6 @@ int main()
                 window.close();
         }
         window.clear(sf::Color::White);
-        sf::CircleShape shape(50.f);
-        shape.setFillColor(sf::Color(190, 60, 130));
         window.draw(shape);
         window.display();
     }

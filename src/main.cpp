@@ -7,7 +7,6 @@ int main()
     shape.setFillColor(sf::Color(190, 60, 130));
     while (window.isOpen())
     {
-        sf::Vector2u size = window.getSize();
         sf::Event event;
         while (window.pollEvent(event))
         {
